@@ -118,7 +118,7 @@ class _PortfolioHomeState extends State<PortfolioHome>
                   _NavButton('Projects', () => _scrollTo(_projectsKey)),
                   _NavButton('Achievements', () => _scrollTo(_achievementsKey)),
                   _NavButton('Leadership', () => _scrollTo(_leadershipKey)),
-                  _NavButton('Contact', () => _scrollTo(_contactKey)),
+                 // _NavButton('Contact', () => _scrollTo(_contactKey)),
                 ],
                 const SizedBox(width: 16),
               ],
@@ -162,7 +162,7 @@ class _PortfolioHomeState extends State<PortfolioHome>
                 child: const _AchievementsSection(),
               ),
               _Section(key: _leadershipKey, child: const _LeadershipSection()),
-              _Section(key: _contactKey, child: const _ContactSection()),
+              // _Section(key: _contactKey, child: const _ContactSection()),
               const SizedBox(height: 48),
               const Center(
                 child: Text(
@@ -289,7 +289,7 @@ class _MobileDrawer extends StatelessWidget {
                     Icons.groups_outlined,
                     onLeadership,
                   ),
-                  _DrawerItem('Contact', Icons.mail_outline, onContact),
+                  // _DrawerItem('Contact', Icons.mail_outline, onContact),
                 ],
               ),
             ),
@@ -1055,36 +1055,36 @@ class _LeadershipSection extends StatelessWidget {
 }
 
 // ------------------ CONTACT ------------------
-class _ContactSection extends StatelessWidget {
-  const _ContactSection();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _H2('Contact'),
-        const SizedBox(height: 12),
-        Wrap(
-          spacing: 12,
-          runSpacing: 12,
-          children: [
-            _SocialButton('Email', Icons.mail, 'mailto:${SakshamData.email}'),
-            _SocialButton(
-              'LinkedIn',
-              Icons.business_center,
-              SakshamData.linkedin,
-            ),
-            _SocialButton('GitHub', Icons.code, SakshamData.github),
-            _SocialButton('X', Icons.alternate_email, SakshamData.x),
-            _SocialButton('Medium', Icons.edit_note, SakshamData.medium),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
+// class _ContactSection extends StatelessWidget {
+//   const _ContactSection();
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+//       crossAxisAlignment: CrossAxisAlignment.start,
+//       children: [
+//         _H2('Contact'),
+//         const SizedBox(height: 12),
+//         Wrap(
+//           spacing: 12,
+//           runSpacing: 12,
+//           children: [
+//             _SocialButton('Email', Icons.mail, 'mailto:${SakshamData.email}'),
+//             _SocialButton(
+//               'LinkedIn',
+//               Icons.business_center,
+//               SakshamData.linkedin,
+//             ),
+//             _SocialButton('GitHub', Icons.code, SakshamData.github),
+//             _SocialButton('X', Icons.alternate_email, SakshamData.x),
+//             _SocialButton('Medium', Icons.edit_note, SakshamData.medium),
+//           ],
+//         ),
+//       ],
+//     );
+//   }
+// }
+//
 // ------------------ SHARED UI ------------------
 class _H2 extends StatelessWidget {
   final String text;
