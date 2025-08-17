@@ -1,7 +1,6 @@
 class SakshamData {
   static const String name = 'Saksham';
   static const String location = 'Delhi, India';
-  static const String phone = '+91-8376063400';
   static const String email = 'saksham252003@gmail.com';
 
   // Socials

@@ -414,11 +414,7 @@ class _HeroSection extends StatelessWidget {
                       label: SakshamData.email,
                       onTap: () => _openUrl('mailto:${SakshamData.email}'),
                     ),
-                    _Pill(
-                      icon: Icons.phone,
-                      label: SakshamData.phone,
-                      onTap: () => _openUrl('tel:${SakshamData.phone}'),
-                    ),
+
                   ],
                 ),
                 const SizedBox(height: 18),
@@ -479,11 +475,6 @@ class _HeroSection extends StatelessWidget {
                     icon: Icons.mail,
                     label: SakshamData.email,
                     onTap: () => _openUrl('mailto:${SakshamData.email}'),
-                  ),
-                  _Pill(
-                    icon: Icons.phone,
-                    label: SakshamData.phone,
-                    onTap: () => _openUrl('tel:${SakshamData.phone}'),
                   ),
                 ],
               ),
